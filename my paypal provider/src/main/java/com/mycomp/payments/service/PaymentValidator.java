@@ -17,7 +17,6 @@ public class PaymentValidator {
 	 * This method checks incoming CreateOrderReq for null/invalid values.
 	 * If there is any validation error, it throws PaypalProviderException
 	 * if no error, then just runs till the end. So void return type.
-	 * @param createOrderReq
 	 */
 	public void validateCreateOrder(CreateOrderReq createOrderReq) {
 		log.info("Validating create order request: {}", createOrderReq);

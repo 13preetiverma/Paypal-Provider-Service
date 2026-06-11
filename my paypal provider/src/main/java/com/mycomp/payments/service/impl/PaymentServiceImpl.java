@@ -51,7 +51,7 @@ public class PaymentServiceImpl implements PaymentService {
 		
 		HttpRequest httpRequest = createOrderHelper.prepareCreateOrderHttpRequest(
 				createOrderReq, accessToken);
-		log.info("Prepared HttpRequest for OAuth call: {}", httpRequest);
+		log.info("Prepared HttpRequest for create order call: {}", httpRequest);
 		
 		ResponseEntity<String> successResponse = httpServiceEngine.makeHttpCall(httpRequest);
 		log.info("HTTP response from HttpServiceEngine: {}", successResponse);

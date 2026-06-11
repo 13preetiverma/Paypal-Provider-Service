@@ -32,7 +32,7 @@ public class HttpServiceEngine {
 
 			return httpResponse;
 		} catch (Exception e) { 
-			log.error("Exception while preparing form data: {}", e.getMessage(), e);
+			log.error("Exception while making a HTTP call: {}", e.getMessage(), e);
 
 			throw new RuntimeException("HTTP call failed in HttpServiceEngine"
 					+ ": " + e.getMessage());
